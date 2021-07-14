@@ -6,10 +6,7 @@
   "publishConfig": {
     "@bcjat:registry": "https://npm.pkg.github.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bcjat/superlogin.git"
-  },
+  "repository": "git:github.com/bcjat/superlogin.git",
   "engines": {
     "node": ">=6.0.0"
   },
