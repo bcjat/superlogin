@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Authentication <%= error ? 'Failed' : 'Success' %></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+</head>
+<body>
+<script type="text/javascript">
+    var jsCallback = <%- JSON.stringify(jsCallback) %>;
+    if (window.opener && jsCallback) {
+        window.opener.focus();
+        var auth = <%- JSON.stringify(auth) %>;
+        var error = <%- JSON.stringify(error) %>;
+        var link = <%- JSON.stringify(link) %>;
+        if (window.opener.superlogin && window.opener.superlogin.oauthSession) {
+            window.opener.superlogin.oauthSession(error, auth, link);
+            window.close();
+        }
+    }
+</script>
+Successfully logged in. You may close this window and/or return to the app.
+</body>
+</html>
