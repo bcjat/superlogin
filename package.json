@@ -1,10 +1,11 @@
 {
   "name": "@bcjat/superlogin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Powerful authentication for APIs and single page apps using the CouchDB ecosystem which supports a variety of providers.",
   "main": "./lib/index.js",
   "publishConfig": {
-    "@bcjat:registry": "https://npm.pkg.github.com"
+    "@bcjat:registry": "https://npm.pkg.github.com",
+    "registry": "https://registry.npmjs.org"
   },
   "repository": "git:github.com/bcjat/superlogin.git",
   "engines": {
